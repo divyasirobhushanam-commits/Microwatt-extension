@@ -10,8 +10,13 @@ Modern AI/ML workloads increasingly rely on low-precision arithmetic to achieve 
 ---
 
 ## Problem Statement
-Design and implement **scalar-only extensions** to Power ISA in the Microwatt core, supporting INT8 and FP8 arithmetic operations (ADD, SUB, MUL, MAC, and INT8 dot-products/accumulations).  
-The project will provide RTL testbenches and target the **SKY130 open-source process**, licensed under open hardware standards and reproducible via the **OpenFrame user area**.
+Current lightweight CPUs (like Microwatt) do not support low-precision FP8/INT8 arithmetic natively, limiting their usefulness in AI/ML workloads.  
+
+The goal of this project is to:  
+- Design and implement **scalar-only extensions** to the Power ISA in Microwatt.  
+- Support INT8 and FP8 arithmetic operations (ADD, SUB, MUL, MAC, DOT).  
+- Provide testbenches and synthesis results targeting the **SKY130 open-source process**.  
+- Release as **open hardware**, reproducible under the OpenFrame user area.
 
 ---
 
@@ -54,11 +59,29 @@ The project will provide RTL testbenches and target the **SKY130 open-source pro
 
 ---
 
+## Impact & Applications
+By adding FP8 and INT8 support to Microwatt, this project enables:  
+- **Edge AI/ML devices** (IoT sensors, drones, smart cameras) to run inference locally without needing GPUs.  
+- **Healthcare and wearables** to process AI workloads in real time with ultra-low power.  
+- **Open-source silicon projects** to adopt low-precision AI instructions, accelerating research and teaching.  
+- A **reproducible reference design** for universities and startups exploring TinyML hardware.  
+
+This bridges the gap between **general-purpose CPUs** and **specialized AI accelerators**, making AI more accessible on open hardware.
+
+---
+
 ## Expected Outcomes
 - Extended Microwatt core with **native INT8 and FP8 scalar support**.  
-- Open-source RTL, testbenches, and documentation.  
+- RTL + testbenches for reproducible verification.  
 - Synthesis results on **SKY130 technology**.  
-- Reusable building block for lightweight AI/ML accelerators.  
+- Open-source release, serving as a **building block for future AI accelerators**.  
+
+---
+
+## Project Plan (Timeline)
+- **Phase 1 (Week 1–2):** Add INT8 arithmetic unit (ADD, SUB, MUL, MAC, DOT) with testbenches.  
+- **Phase 2 (Week 3–4):** Add FP8 unit (ADD, SUB, MUL, MAC) and integrate into Microwatt pipeline.  
+- **Phase 3 (Week 5+):** Verify with simulations, synthesize on SKY130 using OpenLane, and document results.  
 
 ---
 
