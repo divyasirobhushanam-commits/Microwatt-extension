@@ -1,0 +1,19 @@
+{
+  "name": "Microwatt-extension",
+  "description": "Microwatt with custom scalar unit",
+  "blocks": [
+    {
+      "name": "core",
+      "source": "verilog/rtl/microwatt_custom/core.vhdl"
+    },
+    {
+      "name": "custom_scalar_unit",
+      "source": "verilog/rtl/microwatt_custom/custom_scalar_unit.v",
+      "layout": {
+        "gds": "gds/custom_scalar_unit.gds",
+        "lef": "lef/custom_scalar_unit.lef"
+      }
+    }
+  ]
+}
+
