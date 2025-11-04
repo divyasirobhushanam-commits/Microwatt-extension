@@ -1,0 +1,21 @@
+{
+  "project": "Microwatt Custom Extension",
+  "owner": "divyasirobhushanam",
+  "description": "A Microwatt RISC-V/PowerPC core with added custom scalar unit and modified decode/execute logic for ChipFoundry submission.",
+  "top_module": "microwatt_custom",
+  "source_files": [
+    "core.vhdl",
+    "decode1.vhdl",
+    "decode2.vhdl",
+    "decode_types.vhdl",
+    "execute1.vhdl",
+    "custom_scalar_unit.vhdl",
+    "custom_scalar_unit.v"
+  ],
+  "clock_port": "clk",
+  "reset_port": "rst",
+  "category": "CPU Core",
+  "version": "1.0",
+  "license": "Apache-2.0"
+}
+
