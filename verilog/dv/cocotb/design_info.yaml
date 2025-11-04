@@ -1,0 +1,9 @@
+CARAVEL_ROOT: /mnt/c/Users/User/chipfoundry_projects/Microwatt-extension/caravel
+MCW_ROOT: /mnt/c/Users/User/chipfoundry_projects/Microwatt-extension/mgmt_core_wrapper
+PDK: sky130B
+PDK_ROOT: /mnt/c/Users/User/chipfoundry_projects/Microwatt-extension/dependencies/pdks
+USER_PROJECT_ROOT: /mnt/c/Users/User/chipfoundry_projects/Microwatt-extension
+caravan: false
+clk: 25
+emailto:
+- null

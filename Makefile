@@ -20,6 +20,10 @@ export UPRJ_ROOT?=$(PWD)
 PRECHECK_ROOT?=${HOME}/mpw_precheck
 export MCW_ROOT?=$(PWD)/mgmt_core_wrapper
 SIM?=RTL
+microwatt_core:
+	export CARAVEL_ROOT=$(CARAVEL_ROOT); \
+	export MPW_TAG=$(MPW_TAG); \
+	make -C $(CARAVEL_ROOT)/openlane/microwatt_core
 
 # Install lite version of caravel, (1): caravel-lite, (0): caravel
 CARAVEL_LITE?=1
